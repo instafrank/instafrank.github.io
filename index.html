@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Styles-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="javascript/modal.js"></script>
+</head>
+
+<!--Navbar-->
+
+<body>
+    <header>
+        <ul class="nav-wrap">
+            <li id="logo">Franco López</li>
+            <nav>
+                <li><a href="#banner" class="active"><span>&#9996;&#127996;</span></a></li>
+                <li><a href="#about">Yo</a></li>
+                <li><a href="#portfolio">Recomendaciones</a></li>
+                <li><a href="#contact">Contactar</a></li>
+            </nav>
+        </ul>
+    </header>
+    <div class="main-container ">
+        <section id="banner">
+            <div class="wrapper">
+                <div class="banner-wrapper">
+                    <h1 id="title">_Instafrank</h1>
+                    <h2 id="sub-title">Tattoo Artist</h2>
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/wuirito.frank" class="round-button button-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/__instafrank" class="round-button instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Spokaroonie" class="round-button github"><i class="fa fa-tiktok" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="inner-wrapper">
+                <h2 class="category">Acerca de mí</h2>
+                <div style="display: flex; align-items: center;">
+                    <div class="content">
+                        <p>Hola! Me llamo Franco López y soy tatuador</p>
+                        <p>Te cuento un poco de mí y así nos conocemos mejor ;)</p>
+                        <p>Desde muy pequeño me incline en el mundo del dibujo, aprendí a tocar la armónica y el saxo(aunque ahora lo tengo un poco olvidado), pero volveré</p>
+                        <p>Hace un año y media me saqué el certificado de tatuador profesional y el curso de sanitario</p>
+                        <p>Desde entonces llevo en este mundo tan increíble</p>
+                    </div>
+                    <img id="profile" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/13055571_10204745385154160_3879750093449158004_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=cMuvQxzOqi4AX9Opbgh&_nc_ht=scontent-mad1-1.xx&oh=00_AT-F2RGVZ13iYLH0e6-qaqL3b4nUmL1VEM0M--eab3y7OQ&oe=61E81543"
+                        alt="profile" width="337px" height="478px">
+                </div>
+                <p>Te dejo una foto mía ;)</p>
+
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="wrapper">
+                <h2 class="category" id="">Recomendaciones para tú tattoo</h2>
+                <div class="flex-container">
+                    <button class="recommend-item" id="myBtn"> Como debes preparate para tu tattoo </button>
+                    <button class="recommend-item" id="myBtn"> Como debes cuidarte tú tatto </button>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div style="background-color: black;">
+                                <div>
+                                    <h2>Como debes preparate para tu tattoo</h2>
+                                    <p>Sigue estos pasos que te recomiendo y tú experiencia será mucho mejor</p>
+                                    <h3>Programa una cita ;)</h3>
+                                    <p>Puedes contactarme a mi correo personal o por mis redes sociales</p>
+                                    <div>
+                                        <div>
+                                            <a href="https://www.instagram.com/__instafrank/?hl=es">Instagram</a>
+                                        </div>
+                                        <div>
+                                            <a href="mailto:">InstaFrank</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3>La hidratación</h3>
+                                    <p>Debes mantener tu piel hidratada de cara a la sesion del tatuaje, de hecho siempre es necesario tener nuestra piel pero dias antes debes prepar tu piel</p>
+                                    <p>Asi mantendras la piel más hidrata y la cura será mas rapido</p>
+                                    <p>Es importante hidrarte desde el interior, bebiendo agua</p>
+                                </div>
+                                <div>
+                                    <h3>Depilación</h3>
+                                    <p>Quitar todo el vello que tiene tú piel me ayudara a trabajar sobre una piel limpia</p>
+                                    <p>Es muy importante que no te hagas daño ya que un corte podría retrasar nuestra sesión de trabajo, si no estas acostumbrado a depilarte, puedes pedirme ayuda</p>
+                                    <p></p>
+                                    <p>Si optas por la depilación con cera, debes hacer días antes de nuestra sesión</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="port-padding"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="inner-wrapper">
+                <h2 class="category">Contacta conmigo</h2>
+                <div class="contact-wrapper">
+                    <form action="/my-handling-form-page" method="post" class="contact-form">
+                        <span class="span-half pull-left">
+                        <label>Nombre
+                            <input type="text" name="name" placeholder="Como quieres que me diriga a tí" required="">
+                        </label>
+                    </span>
+                        <span class="span-half pull-right">
+                        <label>Mensaje
+                            <textarea name="message" placeholder="Se cortez ;)" required=""></textarea>
+                        </label>
+                    </span>
+                        <span class="span-half pull-left">
+                        <label>E-mail
+                            <input type="text" name="email" placeholder="Introduce tú email" required="">
+                        </label>
+                    </span>
+                        <button type="submit" class="button submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <small>Develop by ifsamed</small>
+    </footer>
+</body>
+
+</html>
